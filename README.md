@@ -18,7 +18,7 @@ GREEN은 시리얼 포트를 가지고 있는 다수개의 혈압기의 결과�
 
 ## Installation
 + install netbean with java 1.8
-+ link external JARs(in a lib folder ) at netbean
++ link external JARs(in a libs folder) at netbean
 + connect Blood pressures with a hub
 
 ## Figures
