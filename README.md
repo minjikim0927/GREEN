@@ -22,3 +22,6 @@ GREEN은 시리얼 포트를 가지고 있는 다수개의 혈압기의 결과�
 
 ## Pics
 ![Green1](/green1.png)
+![Green1](/green2.png)
+![Green1](/green3.png)
+![Green1](/green4.png)
