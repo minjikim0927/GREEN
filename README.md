@@ -8,12 +8,11 @@ GREEN은 시리얼 포트를 가지고 있는 다수개의 혈압기의 결과�
 + 정확한 시간기록을 위해 서버와 시간동기
 + 프린트 양식 지정가능
 
-## Prerequisites
-  * Software
+## SW Prerequisites
 + Netbean 8.2 (JAVA FX included)
 + JAVA 1.8
 
-  * Hardware
+## HW Prerequisites
 + 4 port RxTx serial port hub (Moxa Uport1450 serial hubs) 
 + 혈압계 (RxTx serial port installed) 
 
@@ -24,7 +23,10 @@ GREEN은 시리얼 포트를 가지고 있는 다수개의 혈압기의 결과�
 
 ## Figures
 + Fig1. Network
->![network](/green1.png)
+![network](/green1.png)
++ Fig2. Monitoring
 ![monitoring](/green2.png)
++ Fig3. Data encryption
 ![data encryption](/green3.png)
++ Fig4. Printing form
 ![printing form](/green4.png)
