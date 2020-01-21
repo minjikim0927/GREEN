@@ -3,8 +3,10 @@ GREEN은 시리얼 포트를 가지고 있는 다수개의 혈압기의 결과�
 
 ## 주요 기능
 + NCS, CS 범위를 설정하여 측정값이 해당되면 표시
-+ 측정값 암호화
-+ 4개의 혈압계 
++ 측정 데이터 암호화
++ 4개의 혈압계 모니터링
++ 정확한 시간기록을 위해 서버와 시간동기
++ 프린트 양식 지정가능
 
 ## Prerequisites
   ### Software
@@ -21,7 +23,7 @@ GREEN은 시리얼 포트를 가지고 있는 다수개의 혈압기의 결과�
 + connect Blood pressures with a hub
 
 ## Pics
-![Green1](/green1.png)
-![Green1](/green2.png)
-![Green1](/green3.png)
-![Green1](/green4.png)
+![network](/green1.png)
+![monitoring](/green2.png)
+![data encryption](/green3.png)
+![printing form](/green4.png)
