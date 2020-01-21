@@ -21,4 +21,4 @@ GREEN은 시리얼 포트를 가지고 있는 다수개의 혈압기의 결과�
 + connect Blood pressures with a hub
 
 ## Pics
-![Green1](https://github.com/jhlee2376/GREEN/blob/master/Geen1.png)
+![Green1](/Geen1.png)
