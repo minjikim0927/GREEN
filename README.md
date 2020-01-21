@@ -22,8 +22,9 @@ GREEN은 시리얼 포트를 가지고 있는 다수개의 혈압기의 결과�
 + link external JARs(in a lib folder ) at netbean
 + connect Blood pressures with a hub
 
-## Pics
-![network](/green1.png)
+## Figures
++ Fig1. Network
+>![network](/green1.png)
 ![monitoring](/green2.png)
 ![data encryption](/green3.png)
 ![printing form](/green4.png)
