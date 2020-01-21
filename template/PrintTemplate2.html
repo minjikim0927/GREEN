@@ -1,0 +1,142 @@
+<!--
+혈압기 측정결과 출력 templete 입니다.
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//KOR">
+-->
+<html>
+    <head>
+        <meta  charset="utf-8">
+        <style>
+            body { font-family:"Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; font-size:10pt; }
+            .info {margin-top:0; padding:0;font-size:5px;  }
+            .data{font-size:14px; font-weight: bold;}
+			.box{}
+        </style>
+    </head>
+    <body >
+        <table  width="100%" border="0" cellpadding="0" cellspacing="0" >
+            <tr>
+                <td><p class="info"  align="left">Chonbuk National University Hospital</p></td>
+                <td><p  class="info" align="right" >OMRON HBP-9020 #$port </p> </td>
+            </tr>
+        </table>
+
+        <div class="centent" align="center">
+            <br><br><br><br><br><br><br><br>
+            <h1>Vital Sign</h1>
+            <p align="right">Screening No. &nbsp;: _________________________</p>
+            <p align="right">&nbsp;Subject ID : _________________________</p>
+            <br><br>
+          
+           <!-- 여기서부터 절대 지우지 마세요.안에 혈압기 측정값이 들어값니다.    -->
+            <table  border="0" cellpadding="0" cellspacing="0" >
+                <tbody>
+                    <tr>
+                        <td  colspan="3"> <p> $date <br></p></td> 
+                    </tr>
+                    <tr>
+                        <td><p>Systolic blood pressure   </p></td>  
+                        <td  align="right" ><p class="data">$sys</p></td>   
+                        <td  align="left"><p><small> &nbsp; mm Hg</small></p></td>
+                    </tr>
+                    <tr>
+                        <td><p>Diastolic blood pressure &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp  </p></td>  
+                        <td  align="right" ><p class="data">$dia</p></td>   
+                        <td  align="left"><p><small>&nbsp; mm Hg</small></h5></td>
+                    </tr>
+                    <tr>
+                        <td><p>Pulse rate   </p></td>  
+                        <td  align="right" ><p class="data">$pr</p></td> 
+                        <td  align="left"><p><small> &nbsp; bpm</small></p></td>
+                    </tr>					       
+                </tbody>
+            </table>
+            <!--여기까지는 절대 지우지 마세요. -->
+
+            <br>		<br>
+			<table  border="0" cellpadding="0" cellspacing="0" >
+                <tbody>         
+					<tr >
+                        <td align="right">  <p> Measured by &nbsp;&nbsp;:&nbsp;&nbsp;</p> </td>
+                        <td> <p>   (sign) _______________________________ &nbsp;&nbsp;&nbsp;&nbsp;</p> </td>
+                        <td> <p>    Date&nbsp; : &nbsp;  </p></td>
+                        <td> <p>  20________ / </p> </td>
+                        <td> <p>    _______ / </p> </td>
+                        <td> <p>    _______ </p></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><p class="info" align="center">  year </p><br></td>
+                        <td><p class="info"  align="center">  month </p><br></td>
+                        <td><p class="info"  align="center">  day </p><br></td>
+                    </tr>
+				</tbody>
+			</table>
+		</div>
+		<hr/>
+        <p class="info">
+            &nbsp;&nbsp;&nbsp;&nbsp *  : in case of systolic blood pressure value is $SYS_NORM_NCS~$SYS_NCS_CS or $SYS_CS_NCS~$SYS_NCS_NORM mm Hg, diastolic blood pressure value is $DIA_NORM_NCS~$DIA_NCS_CS mm Hg, pulse rate is $PR_NORM_NCS~$PR_NCS_CS bpm or $PR_CS_NCS~$PR_NCS_NORM bpm.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp ** : in case of systolic blood pressure value is &gt;$SYS_NCS_CS or &lt;$SYS_CS_NCS mm Hg, diastolic blood pressure value is &gt;$DIA_NCS_CS mm Hg, pulse rate is &gt;$PR_NCS_CS bpm or &lt;$PR_CS_NCS bpm.
+		</p>
+		<br>
+		<div class="centent" align="center">	
+            <table  border="0" cellpadding="5" cellspacing="1" >
+                <tbody>
+				
+                    <tr>
+                        <td align="right">
+                            <p> Clinical Significance&sup1; &nbsp;&nbsp;:&nbsp;&nbsp;</p>
+                        </td>
+                        <td>
+                            <p>    ⬜&nbsp;Normal&nbsp; &nbsp; &nbsp;⬜&nbsp;NCS&nbsp;&nbsp;&nbsp; ⬜&nbsp;CS </p>
+                        </td>
+						
+                    </tr>
+                    <tr>
+                        <td align="right"> <p> Comment &nbsp;&nbsp;:&nbsp;&nbsp;</p>
+                        </td>
+                        <td  >
+                            <p>   ⬜&nbsp;None</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td  >
+                            <p style="margin-top:9px;" > __________________________________________________________________________</p>
+                            <p style="margin-top:9px;" > __________________________________________________________________________</p>
+                            <p style="margin-top:9px;" > __________________________________________________________________________</p>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <br>
+            <table  border="0" cellpadding="0" cellspacing="0" >
+                <tbody>                   
+                    <tr>
+                        <td align="right"> <p> Confirmed by &nbsp;&nbsp;:&nbsp;&nbsp;</p></td>
+                        <td> <p>   (sign) _______________________________ &nbsp;&nbsp;&nbsp;&nbsp;</p> </td>
+                        <td> <p>    Date&nbsp; : &nbsp;  </p></td>
+                        <td> <p>  20________ / </p> </td>
+                        <td> <p>    _______ / </p> </td>
+                        <td> <p>    _______ </p>  </td>
+                    </tr>
+                    <tr>
+                        <td>  </td>
+                        <td>  </td>
+                        <td> </td>
+                        <td>  <p class="info"  align="center">  year </p><br> </td>
+                        <td> <p class="info"  align="center">  month </p><br> </td>
+                        <td>  <p class="info"  align="center">  day </p><br>  </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr/>
+        <p class="info">&sup1;Clinical Significance: Not Clinically Significant(NCS), Clinically Significant(CS).<br>
+    </body>
+</html>
+
