@@ -9,11 +9,11 @@ GREEN은 시리얼 포트를 가지고 있는 다수개의 혈압기의 결과�
 + 프린트 양식 지정가능
 
 ## Prerequisites
-  ### Software
+  * Software
 + Netbean 8.2 (JAVA FX included)
 + JAVA 1.8
 
-  ### Hardware
+  * Hardware
 + 4 port RxTx serial port hub (Moxa Uport1450 serial hubs) 
 + 혈압계 (RxTx serial port installed) 
 
